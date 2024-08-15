@@ -43,13 +43,7 @@ const CountdownTimer = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-center bg-black bg-opacity-50 backdrop-blur-lg rounded-lg p-6 shadow-lg border border-pink-500 hover:border-yellow-300 transition-colors duration-300"
         >
-          <motion.div
-            animate={{ scale: [1, 1.1, 1] }}
-            transition={{ duration: 1, repeat: Infinity }}
-            className="text-5xl font-bold mb-2 text-neon-blue"
-          >
-            {value}
-          </motion.div>
+          <motion.div className="text-5xl font-bold mb-2 text-neon-blue">{value}</motion.div>
           <div className="text-lg uppercase text-neon-pink">{unit}</div>
         </motion.div>
       ))}
