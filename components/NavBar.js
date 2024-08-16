@@ -1,9 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const NavBar = () => {
   const navItems = ['Home', 'About', 'Events', 'Schedule', 'Contact', 'Team'];
+  const pathname = usePathname();
 
   return (
     <nav className="flex justify-center p-6 z-10">
@@ -14,16 +16,25 @@ const NavBar = () => {
         transition={{ duration: 0.5 }}
       >
         <ul className="flex space-x-8">
-          {navItems.map((item) => (
-            <motion.li key={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href={`/${item.toLowerCase()}`}
-                className="text-white z-50 text-lg font-semibold hover:text-yellow-300 transition-colors duration-300"
-              >
-                {item}
-              </Link>
-            </motion.li>
-          ))}
+          {navItems.map((item) => {
+            const href = item.toLowerCase() === 'home' ? '/' : `/${item.toLowerCase()}`;
+            const isActive = pathname === href;
+            
+            return (
+              <motion.li key={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  href={href}
+                  className={`z-50 text-lg font-semibold transition-colors duration-300 ${
+                    isActive 
+                      ? 'text-yellow-300 hover:text-yellow-300' 
+                      : 'text-white hover:text-yellow-300'
+                  }`}
+                >
+                  {item}
+                </Link>
+              </motion.li>
+            );
+          })}
         </ul>
       </motion.div>
     </nav>
