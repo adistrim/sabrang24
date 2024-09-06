@@ -2,10 +2,11 @@
 
 import dynamic from 'next/dynamic';
 import { motion, useAnimation } from 'framer-motion';
-import NavBar from '../components/NavBar';
+import NavBar from '@/components/NavBar';
 import { useEffect, useState } from 'react';
 import { FaMusic, FaTheaterMasks, FaPaintBrush } from 'react-icons/fa';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import TheBall from '@/components/TheBall';
 
 const DynamicCountdownTimer = dynamic(() => import('../components/CountdownTimer'), { ssr: false });
 
@@ -31,34 +32,27 @@ export default function HomePage() {
 
     useEffect(() => {
         backgroundControls.start({
-            background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255,0,255,0.3), rgba(0,0,255,0.3), rgba(0,255,255,0.3))`,
+            background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(128,0,128,0.4), rgba(0,0,128,0.4), rgba(0,128,128,0.4))`,
         });
     }, [mousePosition, backgroundControls]);
 
     return (
-        <div className="min-h-screen bg-black text-white overflow-hidden">
+        <div className="min-h-screen bg-black text-white overflow-hidden flex flex-col">
             <motion.div
                 className="absolute inset-0 opacity-50"
                 animate={backgroundControls}
             />
 
-            <motion.div
-                className="fixed w-20 h-20 rounded-full bg-white opacity-10 pointer-events-none"
-                animate={{
-                    x: mousePosition.x - 40,
-                    y: mousePosition.y - 40,
-                }}
-                transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-            />
+            <TheBall />
 
             <div className='relative'>
                 <NavBar />
             </div>
 
-            <main className="container mx-auto px-4 py-16 relative flex flex-col justify-center items-center">
+            <main className="flex-grow cursor-default container mx-auto px-4 py-8 sm:py-16 relative flex flex-col justify-center items-center">
                 <div className="relative z-10 text-center">
                     <motion.h1
-                        className="text-8xl font-extrabold mb-4"
+                        className="text-6xl md:text-8xl font-extrabold mb-4"
                         animate={{
                             opacity: [0.8, 1, 0.8],
                             textShadow: [
@@ -81,31 +75,31 @@ export default function HomePage() {
                         </span>
                     </motion.h1>
 
-                    <h2 className="text-3xl mb-8 font-light tracking-widest">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl mb-8 font-light tracking-widest">
                         {text}<Cursor cursorColor='pink' />
                     </h2>
 
                     <motion.div
-                        className="flex justify-center items-center space-x-4 mb-12"
+                        className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8 sm:mb-12"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7 }}
                     >
-                        <span className="text-2xl font-light italic text-green-400 flex items-center">
+                        <span className="text-lg sm:text-xl md:text-2xl font-light italic text-green-400 flex items-center">
                             <FaMusic className="mr-2" /> Rejoice.
                         </span>
-                        <span className="text-2xl font-light italic text-pink-400 flex items-center">
+                        <span className="text-lg sm:text-xl md:text-2xl font-light italic text-pink-400 flex items-center">
                             <FaTheaterMasks className="mr-2" /> Rejuvenate.
                         </span>
-                        <span className="text-2xl font-light italic text-yellow-300 flex items-center">
+                        <span className="text-lg sm:text-xl md:text-2xl font-light italic text-yellow-300 flex items-center">
                             <FaPaintBrush className="mr-2" /> Rave.
                         </span>
                     </motion.div>
 
-                    <div className="flex justify-center mb-16">
+                    <div className="flex justify-center mb-8 sm:mb-16">
                         <motion.button
                             aria-label="Join Sabrang 2024 Cultural Fest"
-                            className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg"
+                            className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg"
                             whileHover={{
                                 scale: 1.05,
                                 rotate: 3,
