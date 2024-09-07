@@ -1,8 +1,15 @@
-import { Inter } from "next/font/google";
+import { Bebas_Neue, Inter } from 'next/font/google'
 import "./globals.css";
 import { Providers } from "./providers"
 
 const inter = Inter({ subsets: ["latin"] });
+
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-bebas-neue',
+})
 
 export const metadata = {
   title: "Sabrang 2024",
@@ -12,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${bebasNeue.variable} ${inter.className}`}>
       <Providers>
         {children}
       </Providers>
