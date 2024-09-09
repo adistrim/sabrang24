@@ -3,6 +3,9 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
+import { Rubik } from 'next/font/google';
+
+const rubik = Rubik({ subsets: ['latin'] });
 
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -37,7 +40,7 @@ const CountdownTimer = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 639px)' });
 
   return (
-    <div className={`flex ${isMobile ? 'flex-wrap justify-center space-x-0 gap-4 my-8' : 'justify-center space-x-8 my-16'}`}>
+    <div className={`flex ${isMobile ? 'flex-wrap justify-center space-x-0 gap-4 my-8' : 'justify-center space-x-8 my-16'} ${rubik.className}`}>
       {Object.entries(timeLeft).map(([unit, value]) => (
         (!isMobile || unit !== 'seconds') && (
           <motion.div
