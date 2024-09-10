@@ -1,0 +1,257 @@
+{
+  "Sheet1": [
+    {
+      "Sr. No.": 1,
+      "Events (28)": "Panache",
+      "Min.": 10,
+      "Max.": 20,
+      "Category": "Cultural",
+      "Event Description": "Fashion Ramp Walk",
+      "Category_1": "Flagship"
+    },
+    {
+      "Sr. No.": 2,
+      "Events (28)": "Band Jam",
+      "Min.": 4,
+      "Max.": 8,
+      "Category": "Cultural",
+      "Event Description": "Band Music",
+      "Category_1": "Flagship"
+    },
+    {
+      "Sr. No.": 3,
+      "Events (28)": "Dance Battle",
+      "Min.": 6,
+      "Max.": 12,
+      "Category": "Cultural",
+      "Event Description": "Group Dance",
+      "Category_1": "Flagship"
+    },
+    {
+      "Sr. No.": 4,
+      "Events (28)": "Nukkad Natak",
+      "Min.": 6,
+      "Max.": 12,
+      "Category": "Cultural",
+      "Event Description": "Street Play",
+      "Category_1": "Flagship"
+    },
+    {
+      "Sr. No.": 5,
+      "Events (28)": "Bidding Before Wicket",
+      "Min.": 2,
+      "Max.": 4,
+      "Category": "Management",
+      "Event Description": "Cricket Auction",
+      "Category_1": "Flagship"
+    },
+    {
+      "Sr. No.": 6,
+      "Events (28)": "Spotlight",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Cultural",
+      "Event Description": "Monologue Theatre",
+      "Category_1": "Flagship"
+    },
+    {
+      "Sr. No.": 7,
+      "Events (28)": "Radiant",
+      "Min.": 5,
+      "Max.": 5,
+      "Category": "Technical",
+      "Event Description": "Valorant Online Tournament",
+      "Category_1": "Flagship"
+    },
+    {
+      "Sr. No.": 8,
+      "Events (28)": "Singing Palooza",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Cultural",
+      "Event Description": "Solo Singing",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 9,
+      "Events (28)": "Step Up",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Cultural",
+      "Event Description": "Solo Dance",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 10,
+      "Events (28)": "Mindscape",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Design",
+      "Event Description": "Live Sketching",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 11,
+      "Events (28)": "Color & Contour",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Design",
+      "Event Description": "Makeup/ Face Painting",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 12,
+      "Events (28)": "E-TEE",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Design",
+      "Event Description": "Graphic  T-shirt Designing (online)",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 13,
+      "Events (28)": "Frame by Frame",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Design",
+      "Event Description": "Reel Making",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 14,
+      "Events (28)": "Dialectic",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Literary",
+      "Event Description": "Debate",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 15,
+      "Events (28)": "Codeureka",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Technical",
+      "Event Description": "Competitive Coding",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 16,
+      "Events (28)": "Synergy",
+      "Min.": 1,
+      "Max.": 2,
+      "Category": "Technical",
+      "Event Description": "Sound Mising/Mashup (online)",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 17,
+      "Events (28)": "Courtroom",
+      "Min.": 2,
+      "Max.": 4,
+      "Category": "Literary",
+      "Event Description": "Murder Mystery Solving",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 18,
+      "Events (28)": "Dumb Show",
+      "Min.": 3,
+      "Max.": 3,
+      "Category": "Cultural",
+      "Event Description": "Dumb Charades",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 19,
+      "Events (28)": "Focus",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Technical",
+      "Event Description": "Photography",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 20,
+      "Events (28)": "Seal the Deal",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Management",
+      "Event Description": "Market/Stock Trading",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 21,
+      "Events (28)": "Make a Meme",
+      "Min.": 1,
+      "Max.": 2,
+      "Category": "Technical",
+      "Event Description": "Meme Making (online)",
+      "Category_1": "Regular",
+      "__EMPTY_3": "S"
+    },
+    {
+      "Sr. No.": 22,
+      "Events (28)": "Unknown Battleground",
+      "Min.": 4,
+      "Max.": 4,
+      "Category": "Technical",
+      "Event Description": "BGMI Tournament",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 23,
+      "Events (28)": "Chameleon Canvas",
+      "Min.": 1,
+      "Max.": 1,
+      "Category": "Design",
+      "Event Description": "Painting on Multiple Switching Prompts",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 24,
+      "Events (28)": "Recreation",
+      "Min.": 1,
+      "Max.": 3,
+      "Category": "Design",
+      "Event Description": "Best out of Waste and Product Pitching",
+      "Category_1": "Regular"
+    },
+    {
+      "Sr. No.": 25,
+      "Events (28)": "House Full",
+      "Min.": "NA",
+      "Max.": "NA",
+      "Category": "Mini Event",
+      "Event Description": "Tambola ",
+      "Category_1": "Mini Event"
+    },
+    {
+      "Sr. No.": 26,
+      "Events (28)": "Q Factor",
+      "Min.": "NA",
+      "Max.": "NA",
+      "Category": "Mini Event",
+      "Event Description": "Quiz Showdown",
+      "Category_1": "Mini Event"
+    },
+    {
+      "Sr. No.": 27,
+      "Events (28)": "Metaphor",
+      "Min.": "NA",
+      "Max.": "NA",
+      "Category": "Mini Event",
+      "Event Description": "Open Mic/ Shayari ",
+      "Category_1": "Mini Event"
+    },
+    {
+      "Sr. No.": 28,
+      "Events (28)": "Cards Against Humanity",
+      "Min.": "NA",
+      "Max.": "NA",
+      "Category": "Mini Event",
+      "Event Description": "Party Card-Based Game (sentence combinations)",
+      "Category_1": "Mini Event"
+    }
+  ]
+}

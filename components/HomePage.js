@@ -12,6 +12,8 @@ import PerformanceCard from '@/components/PerformanceCard';
 import { Rubik } from 'next/font/google';
 import { SiAmazongames } from "react-icons/si";
 import { ImHappy2 } from "react-icons/im";
+import FlagshipEventsSection from './FlagshipEventsSection';
+import SponsorshipSection from './SponsorshipSection';
 
 const rubik = Rubik({ subsets: ['latin'] });
 
@@ -268,6 +270,10 @@ export default function HomePage() {
                         </motion.div>
                     </div>
                 </motion.div>
+            </div>
+
+            <div className="flex-grow container mx-auto px-4 py-12 sm:py-20 relative z-10">
+                <FlagshipEventsSection />
             </div>
 
 
