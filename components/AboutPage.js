@@ -136,8 +136,6 @@ const AboutPage = () => {
           </motion.div>
         </div>
 
-        <FlagshipEventsSection />
-
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -149,6 +147,8 @@ const AboutPage = () => {
           </h2>
           <div className='md:mx-[10rem]'><SponsorshipSection /></div>
         </motion.div>
+
+        <FlagshipEventsSection />
       </main>
     </div>
   );
