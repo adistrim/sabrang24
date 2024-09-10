@@ -53,7 +53,7 @@ const AboutPage = () => {
             className="relative aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/images/DSC06742.JPG"
+              src="/images/DSC06742.jpg"
               alt="Sabrang 2024 Collage"
               style={{ objectFit: 'cover' }}
               className="transition-transform duration-500 hover:scale-110"
