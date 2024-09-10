@@ -56,7 +56,7 @@ const AboutPage = () => {
             className="relative aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/images/DSC06742.jpg"
+              src="/images/dj.jpg"
               alt="Sabrang 2024 Collage"
               style={{ objectFit: 'cover' }}
               className="transition-transform duration-500 hover:scale-110"
@@ -126,7 +126,7 @@ const AboutPage = () => {
             className="relative aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/images/20231029_155904100_iOS.jpg"
+              src="/images/night.jpg"
               alt="Sabrang 2024 Performance"
               style={{ objectFit: 'cover' }}
               className="transition-transform duration-500 hover:scale-110"
