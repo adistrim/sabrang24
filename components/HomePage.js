@@ -1,25 +1,24 @@
 "use client";
 
 import dynamic from 'next/dynamic';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import NavBar from '@/components/NavBar';
 import { useEffect, useState } from 'react';
-import { FaMusic, FaTheaterMasks, FaPaintBrush, FaAward, FaCalendarAlt, FaMoneyBillAlt, FaLaptop, FaChartLine, FaPalette, FaUserGraduate } from 'react-icons/fa';
+import { FaTimes, FaMusic, FaTheaterMasks, FaPaintBrush, FaAward, FaCalendarAlt, FaMoneyBillAlt, FaLaptop, FaChartLine, FaPalette, FaUserGraduate } from 'react-icons/fa';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import TheBall from '@/components/TheBall';
 import EventCard from '@/components/EventCard';
-import PerformanceCard from '@/components/PerformanceCard';
 import { Rubik } from 'next/font/google';
 import { SiAmazongames } from "react-icons/si";
 import { ImHappy2 } from "react-icons/im";
 import FlagshipEventsSection from './FlagshipEventsSection';
-import SponsorshipSection from './SponsorshipSection';
 
 const rubik = Rubik({ subsets: ['latin'] });
 
 const DynamicCountdownTimer = dynamic(() => import('../components/CountdownTimer'), { ssr: false });
 
 export default function HomePage() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const [text] = useTypewriter({
         words: ['October 18-20, 2024'],
         loop: 1,
@@ -43,6 +42,11 @@ export default function HomePage() {
         });
     }, [mousePosition, backgroundControls]);
 
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+    const closeModal = () => setIsModalOpen(false);
+
     return (
         <div className="min-h-screen bg-black text-white overflow-hidden flex flex-col">
             <motion.div
@@ -55,6 +59,43 @@ export default function HomePage() {
             <div className="relative">
                 <NavBar />
             </div>
+
+            <AnimatePresence>
+                {isModalOpen && (
+                    <motion.div
+                        key="modal"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                        onClick={closeModal}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            className="bg-white rounded-lg p-6 max-w-sm mx-4 relative"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button
+                                onClick={closeModal}
+                                className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+                            >
+                                <FaTimes />
+                            </button>
+                            <h3 className="text-2xl font-bold mb-4 text-gray-800">Stay tuned!</h3>
+                            <p className="text-gray-600 mb-4">
+                                Registrations for Sabrang 2024 will open soon. For any queries, please contact our registration core:
+                            </p>
+                            <div className="bg-gray-100 p-4 rounded-lg">
+                                <p className="font-semibold text-gray-800">Rahul Verma</p>
+                                <p className="text-gray-600">+91 9414828604</p>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
 
             <main className="flex-grow cursor-default container mx-auto px-4 py-8 sm:py-16 relative flex flex-col justify-center items-center">
                 <div className="relative z-10 text-center">
@@ -114,6 +155,7 @@ export default function HomePage() {
                                 boxShadow: '0 0 20px rgba(236, 72, 153, 0.7)',
                             }}
                             whileTap={{ scale: 0.95 }}
+                            onClick={openModal}
                         >
                             Join the Madness!
                         </motion.button>

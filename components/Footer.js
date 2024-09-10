@@ -84,11 +84,11 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 text-center">
-                    <p className="mb-3 text-lg">
-                        Designed with 💖 by <a href="https://www.linkedin.com/in/rupakshi-sharma-interaction-designer" className="hover:text-purple-400 transition duration-300">Rupakshi</a>
+                    <p className="mb-3 text-md md:text-lg">
+                        Designed with 💖 by <a href="https://www.linkedin.com/in/rupakshi-sharma-interaction-designer" className="hover:text-purple-400 transition duration-300">Rupakshi</a> & <a href="https://www.linkedin.com/in/anushrimodani/" className="hover:text-purple-400 transition duration-300">Anushri</a>
                     </p>
-                    <p className="mb-4 text-lg">
-                        Coded with ☕ by <a href="https://adistrim.in" className="hover:text-purple-400 transition duration-300">adistrim</a>
+                    <p className="mb-4 text-md md:text-lg">
+                        Coded with 🧠 by <a href="https://adistrim.in" className="hover:text-purple-400 transition duration-300">adistrim</a>
                     </p>
                     <p className="text-md text-gray-500">&copy; 2024 <a href="https://jklu.edu.in" className="hover:text-purple-400 transition duration-300">JK Lakshmipat University</a>. All rights reserved.</p>
                 </div>
