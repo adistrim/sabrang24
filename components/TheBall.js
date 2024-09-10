@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 export default function TheBall() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -17,8 +18,14 @@ export default function TheBall() {
     };
   }, []);
 
-  return (
+  useEffect(() => {
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+    setIsDesktop(isDesktop);
+  }, []);
 
+  if (!isDesktop) return null;
+
+  return (
     <motion.div
       className="fixed w-20 h-20 rounded-full bg-white opacity-10 pointer-events-none"
       animate={{
@@ -27,6 +34,5 @@ export default function TheBall() {
       }}
       transition={{ type: "spring", stiffness: 500, damping: 30 }}
     />
-
   );
 }

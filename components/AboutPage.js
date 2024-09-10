@@ -9,6 +9,7 @@ import { FaMusic, FaTheaterMasks, FaPaintBrush } from 'react-icons/fa';
 import { Poppins, Playfair_Display, Rubik } from 'next/font/google';
 import FlagshipEventsSection from './FlagshipEventsSection';
 import SponsorshipSection from './SponsorshipSection';
+import TheBall from './TheBall';
 
 const rubik = Rubik({ subsets: ['latin'] });
 
@@ -32,6 +33,8 @@ const AboutPage = () => {
       <div className="relative z-10">
         <NavBar />
       </div>
+
+      <TheBall />
 
       <main className="flex-grow container mx-auto px-4 py-12 sm:py-20 relative z-10">
         <motion.h1

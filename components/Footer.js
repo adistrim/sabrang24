@@ -85,7 +85,7 @@ const Footer = () => {
 
                 <div className="border-t border-gray-800 pt-8 text-center">
                     <p className="mb-3 text-lg">
-                        Designed with 💖 by <a href="https://www.linkedin.com/in/rupakshi" className="hover:text-purple-400 transition duration-300">Rupakshi</a>
+                        Designed with 💖 by <a href="https://www.linkedin.com/in/rupakshi-sharma-interaction-designer" className="hover:text-purple-400 transition duration-300">Rupakshi</a>
                     </p>
                     <p className="mb-4 text-lg">
                         Coded with ☕ by <a href="https://adistrim.in" className="hover:text-purple-400 transition duration-300">adistrim</a>
