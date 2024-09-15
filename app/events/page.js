@@ -1,5 +1,6 @@
-import ComingSoon from "@/components/ComingSoon";
+import EventsPage from "@/components/EventsPage";
+import eventsData from '@/data/events.json';
 
-export default function EventsPage() {
-    return <ComingSoon />;
+export default function Events() {
+    return <EventsPage events={eventsData} />;
 }

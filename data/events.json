@@ -1,0 +1,170 @@
+[
+    {
+        "Event": "Panache",
+        "img": "/events/panache-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Fashion Ramp Walk"
+    },
+    {
+        "Event": "Band Jam",
+        "img": "/events/bandjam-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Band Music"
+    },
+    {
+        "Event": "Dance Battle",
+        "img": "/events/dance-battle-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Group Dance"
+    },
+    {
+        "Event": "Nukkad Natak",
+        "img": "/events/nukkadnatak-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Street Play"
+    },
+    {
+        "Event": "Bidding Before Wicket",
+        "img": "/events/bbw-page-00001.jpg",
+        "Category": "Management",
+        "Event Description": "Cricket Auction"
+    },
+    {
+        "Event": "Spotlight",
+        "img": "/events/spotlight-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Monologue Theatre"
+    },
+    {
+        "Event": "Radiant",
+        "img": "/events/radiant-page-00001.jpg",
+        "Category": "Technical",
+        "Event Description": "Valorant Online Tournament"
+    },
+    {
+        "Event": "Singing Palooza",
+        "img": "/events/singing-palooza-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Solo Singing"
+    },
+    {
+        "Event": "Step Up",
+        "img": "/events/stepup-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Solo Dance"
+    },
+    {
+        "Event": "Mindscape",
+        "img": "/events/mindscape-page-00001.jpg",
+        "Category": "Design",
+        "Event Description": "Live Sketching"
+    },
+    {
+        "Event": "Color & Contour",
+        "img": "/events/cc-page-00001.jpg",
+        "Category": "Design",
+        "Event Description": "Makeup/ Face Painting"
+    },
+    {
+        "Event": "E-TEE",
+        "img": "/events/e-tee-page-00001.jpg",
+        "Category": "Design",
+        "Event Description": "Graphic  T-shirt Designing (online)"
+    },
+    {
+        "Event": "Frame by Frame",
+        "img": "/events/frame-by-frame-page-00001.jpg",
+        "Category": "Design",
+        "Event Description": "Reel Making"
+    },
+    {
+        "Event": "Dialectic",
+        "img": "/events/dialectic-page-00001.jpg",
+        "Category": "Literary",
+        "Event Description": "Debate"
+    },
+    {
+        "Event": "Codeureka",
+        "img": "/events/codeureka-page-00001.jpg",
+        "Category": "Technical",
+        "Event Description": "Competitive Coding"
+    },
+    {
+        "Event": "Synergy",
+        "img": "/events/synergy-page-00001.jpg",
+        "Category": "Technical",
+        "Event Description": "Sound Mising/Mashup (online)"
+    },
+    {
+        "Event": "Courtroom",
+        "img": "/events/courtroom-page-00001.jpg",
+        "Category": "Literary",
+        "Event Description": "Murder Mystery Solving"
+    },
+    {
+        "Event": "Dumb Show",
+        "img": "/events/dumb-show-page-00001.jpg",
+        "Category": "Cultural",
+        "Event Description": "Dumb Charades"
+    },
+    {
+        "Event": "Focus",
+        "img": "/events/focus-page-00001.jpg",
+        "Category": "Technical",
+        "Event Description": "Photography"
+    },
+    {
+        "Event": "Seal the Deal",
+        "img": "/events/seal-the-deal-page-00001.jpg",
+        "Category": "Management",
+        "Event Description": "Market/Stock Trading"
+    },
+    {
+        "Event": "Make a Meme",
+        "img": "/events/meme-page-00001.jpg",
+        "Category": "Technical",
+        "Event Description": "Meme Making (online)"
+    },
+    {
+        "Event": "Unknown Battleground",
+        "img": "/events/pubg-page-00001.jpg",
+        "Category": "Technical",
+        "Event Description": "BGMI Tournament"
+    },
+    {
+        "Event": "Chameleon Canvas",
+        "img": "/events/chameleon-canvas-page-00001.jpg",
+        "Category": "Design",
+        "Event Description": "Painting on Multiple Switching Prompts"
+    },
+    {
+        "Event": "Recreation",
+        "img": "/events/recreation-page-00001.jpg",
+        "Category": "Design",
+        "Event Description": "Best out of Waste and Product Pitching"
+    },
+    {
+        "Event": "House Full",
+        "img": "/events/housefull-page-00001.jpg",
+        "Category": "Mini Event",
+        "Event Description": "Tambola"
+    },
+    {
+        "Event": "Q Factor",
+        "img": "/events/qf-page-00001.jpg",
+        "Category": "Mini Event",
+        "Event Description": "Quiz Showdown"
+    },
+    {
+        "Event": "Metaphor",
+        "img": "/events/metaphor-page-00001.jpg",
+        "Category": "Mini Event",
+        "Event Description": "Open Mic/ Shayari "
+    },
+    {
+        "Event": "Dare and Chair",
+        "img": "/events/musical-chair-page-00001.jpg",
+        "Category": "Mini Event",
+        "Event Description": "Party Card-Based Game (sentence combinations)"
+    }
+]
