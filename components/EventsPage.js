@@ -36,7 +36,7 @@ const EventsPage = ({ events }) => {
     <div className={`min-h-screen bg-black text-white overflow-hidden flex flex-col ${poppins.className}`}>
       <NavBar />
       <main className="flex-grow container mx-auto px-4 py-8 sm:py-12 md:py-16 relative z-10">
-        <motion.h1 
+        <motion.h1
           className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 sm:mb-8 text-center ${rubik.className}`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const EventsPage = ({ events }) => {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="mb-6 sm:mb-8 flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -67,11 +67,10 @@ const EventsPage = ({ events }) => {
           {categories.map((category) => (
             <motion.button
               key={category}
-              className={`px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold ${
-                activeCategory === category
+              className={`px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold ${activeCategory === category
                   ? 'bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400 text-black'
                   : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-              } transition-all duration-300`}
+                } transition-all duration-300`}
               onClick={() => setActiveCategory(category)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -112,8 +111,8 @@ const EventsPage = ({ events }) => {
         </motion.div>
 
         <AnimatePresence>
-          <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
+          <motion.div
+            className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
@@ -157,10 +156,10 @@ const EventsPage = ({ events }) => {
           <FaStar className="text-2xl sm:text-3xl md:text-4xl text-yellow-400 mx-auto mb-3 sm:mb-4 animate-pulse" />
           <h2 className={`text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 ${rubik.className} text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400`}>Join the Excitement</h2>
           <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 max-w-xl sm:max-w-2xl mx-auto">
-            Immerse yourself in a world of creativity, innovation, and cultural richness. 
+            Immerse yourself in a world of creativity, innovation, and cultural richness.
             Our events offer a platform for talent to shine and ideas to flourish.
           </p>
-          <button className="bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400 text-black font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full hover:from-blue-500 hover:via-pink-500 hover:to-yellow-500 transition duration-300 transform hover:scale-105 text-sm sm:text-base">
+          <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg">
             Register Now
           </button>
         </motion.div>
