@@ -9,13 +9,13 @@
         "img": "/team/SujalPeswani.jpg"
     },
     {
-        "Name": "Shishank Goyal",
+        "Name": "Shashank Goyal",
         "email": "shashankgoyal@jklu.edu.in",
         "number": "8432474451",
         "linkedin": "https://www.linkedin.com/in/shashankgoyal10",
         "role": "Core",
         "committee": "Photography",
-        "img": "/team/ShishankGoyal.jpg"
+        "img": "/team/ShashankGoyal.jpg"
     },
     {
         "Name": "Kavisha Gupta",
@@ -114,7 +114,7 @@
         "linkedin": "https://www.linkedin.com/in/anushrimodani",
         "role": "Core",
         "committee": "Design",
-        "img": "/team/AnushriModani.jpg"
+        "img": "/team/AnushreeModani.jpg"
     },
     {
         "Name": "Divyapratap Singh Rajawat",
@@ -220,14 +220,14 @@
         "number": "9792344647",
         "linkedin": "https://www.linkedin.com/in/anant-pandey-20835221b/",
         "role": "OC",
-        "img": "/team/Anant.jpg"
+        "img": "/team/anant.jpg"
     },
     {
         "Name": "Himangi Chaturvedi",
         "email": "himangichaturvedi@jklu.edu.in",
-        "number": "0",
+        "number": "9024164417",
         "linkedin": "https://www.linkedin.com/in/himangi-chaturvedi-5bb0b0178/",
         "role": "OC",
-        "img": "/team/Himangi.jpg"
+        "img": "/team/himangi.jpg"
     }
 ]

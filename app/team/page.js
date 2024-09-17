@@ -1,5 +1,5 @@
-import ComingSoon from "@/components/ComingSoon";
+import TeamPage from "@/components/TeamPage";
 
-export default function TeamPage() {
-    return <ComingSoon />;
+export default function Team() {
+    return <TeamPage />;
 }
