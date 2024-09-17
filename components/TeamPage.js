@@ -164,9 +164,14 @@ const TeamPage = () => {
                         Together, we will make sure to give you incredible, lifelong memories.
                         Our fest offer a platform for talent to shine and ideas to flourish.
                     </p>
-                    <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg">
+                    <a
+                        href="https://sabrang.ticketless.online/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+                    >
                         Register Now
-                    </button>
+                    </a>
                 </motion.div>
             </main>
         </div>

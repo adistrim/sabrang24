@@ -43,8 +43,9 @@ export default function HomePage() {
     }, [mousePosition, backgroundControls]);
 
     const openModal = () => {
-        setIsModalOpen(true);
+        window.open('http://sabrang.ticketless.online/', '_blank');
     };
+
     const closeModal = () => setIsModalOpen(false);
 
     return (

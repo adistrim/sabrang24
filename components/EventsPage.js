@@ -4,17 +4,11 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import NavBar from '@/components/NavBar';
-import { Poppins, Playfair_Display, Rubik } from 'next/font/google';
+import { Poppins, Rubik } from 'next/font/google';
 import { FaStar } from 'react-icons/fa';
 
 const poppins = Poppins({
   weight: ['400', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const playfair = Playfair_Display({
-  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
@@ -68,8 +62,8 @@ const EventsPage = ({ events }) => {
             <motion.button
               key={category}
               className={`px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold ${activeCategory === category
-                  ? 'bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400 text-black'
-                  : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+                ? 'bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400 text-black'
+                : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                 } transition-all duration-300`}
               onClick={() => setActiveCategory(category)}
               whileHover={{ scale: 1.05 }}
@@ -159,9 +153,14 @@ const EventsPage = ({ events }) => {
             Immerse yourself in a world of creativity, innovation, and cultural richness.
             Our events offer a platform for talent to shine and ideas to flourish.
           </p>
-          <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg">
+          <a
+            href="https://sabrang.ticketless.online/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+          >
             Register Now
-          </button>
+          </a>
         </motion.div>
       </main>
     </div>

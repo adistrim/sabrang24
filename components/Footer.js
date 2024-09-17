@@ -79,7 +79,7 @@ const Footer = () => {
                         <h3 className="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 text-white">Quick Links</h3>
                         <a href="/about" className="block hover:text-purple-400 transition duration-300 mb-3 text-lg">About Sabrang</a>
                         <a href="/events" className="block hover:text-purple-400 transition duration-300 mb-3 text-lg">Events</a>
-                        <a href="#" className="block hover:text-purple-400 transition duration-300 text-lg">Register Now</a>
+                        <a href="http://sabrang.ticketless.online/" target='_blank' className="block hover:text-purple-400 transition duration-300 text-lg">Register Now</a>
                     </div>
                 </div>
 
