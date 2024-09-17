@@ -6,6 +6,7 @@ import Image from 'next/image';
 import NavBar from '@/components/NavBar';
 import { Poppins, Rubik } from 'next/font/google';
 import { FaStar } from 'react-icons/fa';
+import TheBall from './TheBall';
 
 const poppins = Poppins({
   weight: ['400', '600', '700'],
@@ -29,6 +30,7 @@ const EventsPage = ({ events }) => {
   return (
     <div className={`min-h-screen bg-black text-white overflow-hidden flex flex-col ${poppins.className}`}>
       <NavBar />
+      <TheBall />
       <main className="flex-grow container mx-auto px-4 py-8 sm:py-12 md:py-16 relative z-10">
         <motion.h1
           className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 sm:mb-8 text-center ${rubik.className}`}
