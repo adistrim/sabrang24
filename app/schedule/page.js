@@ -1,5 +1,5 @@
-import ComingSoon from "@/components/ComingSoon";
+import SchedulePage from "@/components/SchedulePage";
 
-export default function SchedulePage() {
-    return <ComingSoon />;
+export default function Schedule() {
+    return <SchedulePage />;
 }

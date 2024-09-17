@@ -1,0 +1,182 @@
+[
+    {
+        "Name of Event": "Opening Ceremony",
+        "Date": "18-10-2024",
+        "Start Time": "10:00:00",
+        "End Time": "11:30:00"
+    },
+    {
+        "Name of Event": "Step Up",
+        "Date": "18-10-2024",
+        "Start Time": "11:30:00",
+        "End Time": "13:30:00"
+    },
+    {
+        "Name of Event": "Focus (Briefing)",
+        "Date": "18-10-2024",
+        "Start Time": "11:30:00",
+        "End Time": "13:45:00"
+    },
+    {
+        "Name of Event": "Mindscape",
+        "Date": "18-10-2024",
+        "Start Time": "12:00:00",
+        "End Time": "13:00:00"
+    },
+    {
+        "Name of Event": "Dare and Chair (mini event)",
+        "Date": "18-10-2024",
+        "Start Time": "12:00:00",
+        "End Time": "13:00:00"
+    },
+    {
+        "Name of Event": "Colour & Contour",
+        "Date": "18-10-2024",
+        "Start Time": "13:00:00",
+        "End Time": "15:00:00"
+    },
+    {
+        "Name of Event": "Codeureka",
+        "Date": "18-10-2024",
+        "Start Time": "13:30:00",
+        "End Time": "15:00:00"
+    },
+    {
+        "Name of Event": "Singing Palooza",
+        "Date": "18-10-2024",
+        "Start Time": "14:00:00",
+        "End Time": "16:30:00"
+    },
+    {
+        "Name of Event": "Q Factor (Mini Event)",
+        "Date": "18-10-2024",
+        "Start Time": "16:30:00",
+        "End Time": "17:00:00"
+    },
+    {
+        "Name of Event": "Panache",
+        "Date": "18-10-2024",
+        "Start Time": "17:00:00",
+        "End Time": "19:30:00"
+    },
+    {
+        "Name of Event": "Nukkad Natak",
+        "Date": "19-10-2024",
+        "Start Time": "11:00:00",
+        "End Time": "13:30:00"
+    },
+    {
+        "Name of Event": "Recreation",
+        "Date": "19-10-2024",
+        "Start Time": "11:00:00",
+        "End Time": "14:00:00"
+    },
+    {
+        "Name of Event": "Frame by Frame (Briefing)",
+        "Date": "19-10-2024",
+        "Start Time": "11:00:00",
+        "End Time": "11:15:00"
+    },
+    {
+        "Name of Event": "Courtroon",
+        "Date": "19-10-2024",
+        "Start Time": "12:00:00",
+        "End Time": "14:00:00"
+    },
+    {
+        "Name of Event": "Seal the Deal",
+        "Date": "19-10-2024",
+        "Start Time": "13:00:00",
+        "End Time": "14:00:00"
+    },
+    {
+        "Name of Event": "Chameleon Canvas",
+        "Date": "19-10-2024",
+        "Start Time": "13:00:00",
+        "End Time": "14:00:00"
+    },
+    {
+        "Name of Event": "Band Jam",
+        "Date": "19-10-2024",
+        "Start Time": "14:00:00",
+        "End Time": "16:00:00"
+    },
+    {
+        "Name of Event": "Radiant Day 1",
+        "Date": "19-10-2024",
+        "Start Time": "14:00:00",
+        "End Time": "17:00:00"
+    },
+    {
+        "Name of Event": "Unknown Battleground  Day 1",
+        "Date": "19-10-2024",
+        "Start Time": "14:00:00",
+        "End Time": "17:00:00"
+    },
+    {
+        "Name of Event": "House Full (mini event)",
+        "Date": "19-10-2024",
+        "Start Time": "16:30:00",
+        "End Time": "17:00:00"
+    },
+    {
+        "Name of Event": "Dance Battle",
+        "Date": "19-10-2024",
+        "Start Time": "17:30:00",
+        "End Time": "19:30:00"
+    },
+    {
+        "Name of Event": "Spotlight",
+        "Date": "20-10-2024",
+        "Start Time": "11:00:00",
+        "End Time": "13:00:00"
+    },
+    {
+        "Name of Event": "Frame by Frame Round 2",
+        "Date": "20-10-2024",
+        "Start Time": "11:00:00",
+        "End Time": "14:00:00"
+    },
+    {
+        "Name of Event": "Dialectic",
+        "Date": "20-10-2024",
+        "Start Time": "12:00:00",
+        "End Time": "14:00:00"
+    },
+    {
+        "Name of Event": "Bidding Before Wicket",
+        "Date": "20-10-2024",
+        "Start Time": "12:00:00",
+        "End Time": "14:00:00"
+    },
+    {
+        "Name of Event": "Radiant Day 2",
+        "Date": "20-10-2024",
+        "Start Time": "14:00:00",
+        "End Time": "17:00:00"
+    },
+    {
+        "Name of Event": "Unknown Battleground  Day 2",
+        "Date": "20-10-2024",
+        "Start Time": "14:00:00",
+        "End Time": "17:00:00"
+    },
+    {
+        "Name of Event": "Dumb Show",
+        "Date": "20-10-2024",
+        "Start Time": "14:00:00",
+        "End Time": "16:00:00"
+    },
+    {
+        "Name of Event": "Metaphor",
+        "Date": "20-10-2024",
+        "Start Time": "16:00:00",
+        "End Time": "17:00:00"
+    },
+    {
+        "Name of Event": "Valedictory Ceremony",
+        "Date": "20-10-2024",
+        "Start Time": "17:00:00",
+        "End Time": "19:30:00"
+    }
+]
