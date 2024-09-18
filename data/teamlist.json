@@ -207,6 +207,27 @@
         "img": "/team/ArshiaSikka.jpg"
     },
     {
+        "Name": "Dheeraj Sanghi",
+        "linkedin": "https://www.linkedin.com/in/dheerajsanghi/",
+        "position": "Vice Chancellor at JKLU",
+        "role": "Admin",
+        "img": "/team/dheerajsanghi.jpg"
+    },
+    {
+        "Name": "Deepak Sogani",
+        "linkedin": "https://www.linkedin.com/in/deepak-sogani/",
+        "position": "Head of Student Affairs at JKLU",
+        "role": "Admin",
+        "img": "/team/deepaksogani.jpg"
+    },
+    {
+        "Name": "Priya Kaushik",
+        "linkedin": "https://www.linkedin.com/in/priya-kaushik/",
+        "position": "Executive Student Affairs at JKLU",
+        "role": "Admin",
+        "img": "/team/priyakaushik.jpg"
+    },
+    {
         "Name": "Trisha Roy",
         "email": "trisharoy@jklu.edu.in",
         "number": "9831867722",

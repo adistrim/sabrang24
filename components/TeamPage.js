@@ -21,6 +21,7 @@ const rubik = Rubik({ subsets: ['latin'] });
 const TeamPage = () => {
     const ocMembers = teamData.filter(member => member.role === "OC");
     const coreMembers = teamData.filter(member => member.role === "Core");
+    const adminMembers = teamData.filter(member => member.role === "Admin");
 
     const TeamMemberCard = ({ member }) => (
         <motion.div
@@ -43,7 +44,9 @@ const TeamPage = () => {
                     <div className="text-left">
                         <h3 className="text-sm sm:text-lg font-bold mb-1">{member.Name}</h3>
                         <p className="text-xs sm:text-sm text-gray-300">
-                            {member.role === 'Core' ? member.committee : 'Organizing Committee'}
+                            {member.role === 'Core' ? member.committee :
+                                member.role === 'Admin' ? member.position :
+                                    'Organizing Committee'}
                         </p>
                     </div>
                     <a
@@ -75,6 +78,43 @@ const TeamPage = () => {
                         Meet Our Team
                     </span>
                 </motion.h1>
+
+                {/* Administrative Team Section */}
+                <motion.div
+                    className="my-8 sm:my-12 md:my-16 relative"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.6, duration: 0.6 }}
+                >
+                    <div className="absolute inset-0 flex items-center">
+                        <div className="w-full border-t border-gray-700"></div>
+                    </div>
+                    <div className="relative flex justify-center">
+                        <span className="bg-black px-4 text-sm sm:text-base text-gray-400">
+                            <motion.span
+                                className="inline-block"
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                            >
+                                ✦
+                            </motion.span>
+                            {" ADMINISTRATIVE TEAM "}
+                            <motion.span
+                                className="inline-block"
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                            >
+                                ✦
+                            </motion.span>
+                        </span>
+                    </div>
+                </motion.div>
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                    {adminMembers.map((member) => (
+                        <TeamMemberCard key={member.Name} member={member} />
+                    ))}
+                </div>
+
                 {/* Organizing Committee Section */}
                 <motion.div
                     className="my-8 sm:my-12 md:my-16 relative"
@@ -105,7 +145,7 @@ const TeamPage = () => {
                         </span>
                     </div>
                 </motion.div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                     {ocMembers.map((member) => (
                         <TeamMemberCard key={member.Name} member={member} />
                     ))}
