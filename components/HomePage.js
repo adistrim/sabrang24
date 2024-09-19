@@ -1,28 +1,19 @@
 "use client";
 
-import dynamic from 'next/dynamic';
-import { motion, useAnimation, AnimatePresence } from 'framer-motion';
-import NavBar from '@/components/NavBar';
+import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { FaTimes, FaMusic, FaTheaterMasks, FaPaintBrush, FaAward, FaCalendarAlt, FaMoneyBillAlt, FaLaptop, FaChartLine, FaPalette, FaUserGraduate } from 'react-icons/fa';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { FaMusic, FaAward, FaCalendarAlt, FaMoneyBillAlt, FaLaptop, FaChartLine, FaPalette, FaUserGraduate } from 'react-icons/fa';
+import { useTypewriter } from 'react-simple-typewriter';
 import TheBall from '@/components/TheBall';
 import EventCard from '@/components/EventCard';
 import { SiAmazongames } from "react-icons/si";
 import { ImHappy2 } from "react-icons/im";
 import FlagshipEventsSection from './FlagshipEventsSection';
-import localFont from 'next/font/local'
-
-const spaceRanger = localFont({ src: '../public/fonts/spaceranger.ttf' })
-
-const DynamicCountdownTimer = dynamic(() => import('../components/CountdownTimer'), { ssr: false });
+import PhotoCarousel from './PhotoCarousel';
+import HeroSection from './HeroSection';
 
 export default function HomePage() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [text] = useTypewriter({
-        words: ['October 18-20, 2024'],
-        loop: 1,
-    });
+    
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const backgroundControls = useAnimation();
 
@@ -46,10 +37,8 @@ export default function HomePage() {
         window.open('http://sabrang.ticketless.online/', '_blank');
     };
 
-    const closeModal = () => setIsModalOpen(false);
-
     return (
-        <div className="min-h-screen bg-black text-white overflow-hidden flex flex-col">
+        <div className="bg-black text-white overflow-hidden flex flex-col">
             <motion.div
                 className="absolute inset-0 opacity-50"
                 animate={backgroundControls}
@@ -57,121 +46,13 @@ export default function HomePage() {
 
             <TheBall />
 
-            <div className="relative">
-                <NavBar />
+            <HeroSection />
+
+            <div className="relative md:py-16 bg-gradient-to-b from-purple-900/20 to-blue-900/20">
+                <PhotoCarousel />
             </div>
 
-            <AnimatePresence>
-                {isModalOpen && (
-                    <motion.div
-                        key="modal"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-                        onClick={closeModal}
-                    >
-                        <motion.div
-                            initial={{ scale: 0.9, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.9, opacity: 0 }}
-                            className="bg-white rounded-lg p-6 max-w-sm mx-4 relative"
-                            onClick={(e) => e.stopPropagation()}
-                        >
-                            <button
-                                onClick={closeModal}
-                                className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-                            >
-                                <FaTimes />
-                            </button>
-                            <h3 className="text-2xl font-bold mb-4 text-gray-800">Stay tuned!</h3>
-                            <p className="text-gray-600 mb-4">
-                                Registrations for Sabrang 2024 will open soon. For any queries, please contact our registration core:
-                            </p>
-                            <div className="bg-gray-100 p-4 rounded-lg">
-                                <p className="font-semibold text-gray-800">Rahul Verma</p>
-                                <p className="text-gray-600">+91 9414828604</p>
-                            </div>
-                        </motion.div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-
-
-            <main className="flex-grow cursor-default container mx-auto px-4 py-8 sm:py-16 relative flex flex-col justify-center items-center">
-                <div className="relative z-10 text-center">
-                    <motion.h1
-                        className="text-6xl md:text-8xl font-extrabold mb-4"
-                        animate={{
-                            opacity: [0.8, 1, 0.8],
-                            textShadow: [
-                                '0 0 7px rgba(255,255,255,0.3)',
-                                '0 0 10px rgba(255,255,255,0.5)',
-                                '0 0 7px rgba(255,255,255,0.3)',
-                            ],
-                        }}
-                        transition={{
-                            repeat: Infinity,
-                            duration: 3,
-                        }}
-                        whileHover={{
-                            scale: 1.025,
-                            transition: { duration: 0.2 },
-                        }}
-                    >
-                        <span className={`text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400 ${spaceRanger.className}`}>
-                            SABRANG 2024
-                        </span>
-                    </motion.h1>
-
-                    <h2 className="text-xl sm:text-2xl md:text-3xl mb-8 font-light tracking-widest">
-                        {text}
-                        <Cursor cursorColor="pink" />
-                    </h2>
-
-                    <motion.div
-                        className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8 sm:mb-12"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.7 }}
-                    >
-                        <span className="text-lg sm:text-xl md:text-2xl font-light italic text-green-400 flex items-center">
-                            <FaMusic className="mr-2" /> Rejoice.
-                        </span>
-                        <span className="text-lg sm:text-xl md:text-2xl font-light italic text-pink-400 flex items-center">
-                            <FaTheaterMasks className="mr-2" /> Rejuvenate.
-                        </span>
-                        <span className="text-lg sm:text-xl md:text-2xl font-light italic text-yellow-300 flex items-center">
-                            <FaPaintBrush className="mr-2" /> Rave.
-                        </span>
-                    </motion.div>
-
-                    <div className="flex justify-center mb-8 sm:mb-16">
-                        <motion.button
-                            aria-label="Join Sabrang 2024 Cultural Fest"
-                            className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg"
-                            whileHover={{
-                                scale: 1.05,
-                                rotate: 3,
-                                boxShadow: '0 0 20px rgba(236, 72, 153, 0.7)',
-                            }}
-                            whileTap={{ scale: 0.95 }}
-                            onClick={openModal}
-                        >
-                            Register Now!
-                        </motion.button>
-                    </div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 1 }}
-                    >
-                        <DynamicCountdownTimer />
-                    </motion.div>
-                </div>
-            </main>
-
-            <div className="mt-16 sm:my-[10rem] mb-24">
+            <div className="relative py-24 bg-gradient-to-b from-blue-900/20 to-pink-900/20">
                 <motion.div
                     className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8"
                     initial={{ opacity: 0, y: 20 }}
@@ -237,7 +118,8 @@ export default function HomePage() {
                 </motion.div>
             </div>
 
-            <div className="mt-16 sm:mt-24 mb-24">
+            {/* Exciting Events section */}
+            <div className="relative py-24 bg-gradient-to-b from-pink-900/20 to-purple-900/20">
                 <motion.div
                     className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8"
                     initial={{ opacity: 0, y: 20 }}
@@ -285,7 +167,8 @@ export default function HomePage() {
                 </motion.div>
             </div>
 
-            <div className="mt-16 sm:mt-24 mb-24">
+            {/* Coming Soon section */}
+            <div className="relative py-24 bg-gradient-to-b from-purple-900/20 to-indigo-900/20">
                 <motion.div
                     className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8"
                     initial={{ opacity: 0, y: 20 }}
@@ -315,8 +198,10 @@ export default function HomePage() {
                 </motion.div>
             </div>
 
-            <div className="flex-grow container mx-auto px-4 py-12 sm:py-20 relative z-10">
-                <FlagshipEventsSection />
+            <div className="relative py-24 bg-gradient-to-b from-indigo-900/20 to-blue-900/20">
+                <div className="flex-grow container mx-auto px-4 py-12 sm:py-20 relative z-10">
+                    <FlagshipEventsSection />
+                </div>
             </div>
 
 
