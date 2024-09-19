@@ -8,12 +8,12 @@ import { FaTimes, FaMusic, FaTheaterMasks, FaPaintBrush, FaAward, FaCalendarAlt,
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import TheBall from '@/components/TheBall';
 import EventCard from '@/components/EventCard';
-import { Rubik } from 'next/font/google';
 import { SiAmazongames } from "react-icons/si";
 import { ImHappy2 } from "react-icons/im";
 import FlagshipEventsSection from './FlagshipEventsSection';
+import localFont from 'next/font/local'
 
-const rubik = Rubik({ subsets: ['latin'] });
+const spaceRanger = localFont({ src: '../public/fonts/spaceranger.ttf' })
 
 const DynamicCountdownTimer = dynamic(() => import('../components/CountdownTimer'), { ssr: false });
 
@@ -119,7 +119,7 @@ export default function HomePage() {
                             transition: { duration: 0.2 },
                         }}
                     >
-                        <span className={`text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400 ${rubik.className}`}>
+                        <span className={`text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-400 to-yellow-400 ${spaceRanger.className}`}>
                             SABRANG 2024
                         </span>
                     </motion.h1>
@@ -158,7 +158,7 @@ export default function HomePage() {
                             whileTap={{ scale: 0.95 }}
                             onClick={openModal}
                         >
-                            Join the Madness!
+                            Register Now!
                         </motion.button>
                     </div>
                     <motion.div

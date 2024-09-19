@@ -6,21 +6,18 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import NavBar from '@/components/NavBar';
 import { FaMusic, FaTheaterMasks, FaPaintBrush } from 'react-icons/fa';
-import { Poppins, Playfair_Display, Rubik } from 'next/font/google';
+import { Poppins, Rubik } from 'next/font/google';
 import FlagshipEventsSection from './FlagshipEventsSection';
 import SponsorshipSection from './SponsorshipSection';
 import TheBall from './TheBall';
+import localFont from 'next/font/local'
+
+const spaceRanger = localFont({ src: '../public/fonts/spaceranger.ttf' })
 
 const rubik = Rubik({ subsets: ['latin'] });
 
 const poppins = Poppins({
   weight: ['400', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const playfair = Playfair_Display({
-  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
@@ -38,7 +35,7 @@ const AboutPage = () => {
 
       <main className="flex-grow container mx-auto px-4 py-12 sm:py-20 relative z-10">
         <motion.h1
-          className={`text-5xl md:text-7xl font-extrabold mb-12 text-center ${rubik.className}`}
+          className={`text-5xl md:text-7xl font-extrabold mb-12 text-center ${spaceRanger.className}`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}

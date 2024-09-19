@@ -4,10 +4,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaInstagram, FaMapMarkerAlt, FaPhone, FaShareAlt } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
+import localFont from 'next/font/local'
 
-import { Rubik } from 'next/font/google';
-
-const rubik = Rubik({ subsets: ['latin'] });
+const spaceRanger = localFont({ src: '../public/fonts/spaceranger.ttf' })
 
 const Footer = () => {
     const copyToClipboard = () => {
@@ -36,7 +35,7 @@ const Footer = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <span className={`text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ${rubik.className}`}>
+                            <span className={`text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ${spaceRanger.className}`}>
                                 SABRANG 2024
                             </span>
                         </motion.h2>
