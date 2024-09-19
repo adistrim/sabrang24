@@ -9,6 +9,15 @@
         "img": "/team/SujalPeswani.jpg"
     },
     {
+        "Name": "Arshia Sikka",
+        "email": "arshiasikka@jklu.edu.in",
+        "number": "8448770953",
+        "linkedin": "https://www.linkedin.com/in/arshia-sikka-b71856297",
+        "role": "Core",
+        "committee": "Cultural Events",
+        "img": "/team/ArshiaSikka.jpg"
+    },
+    {
         "Name": "Shashank Goyal",
         "email": "shashankgoyal@jklu.edu.in",
         "number": "8432474451",
@@ -16,6 +25,15 @@
         "role": "Core",
         "committee": "Photography",
         "img": "/team/ShashankGoyal.jpg"
+    },
+    {
+        "Name": "Yuvraj Soni",
+        "email": "yuvrajsoni@jklu.edu.in",
+        "number": "9828067878",
+        "linkedin": "https://www.linkedin.com/in/yuvrajsoni",
+        "role": "Core",
+        "committee": "Photography",
+        "img": "/team/YuvrajSoni.jpg"
     },
     {
         "Name": "Kavisha Gupta",
@@ -45,6 +63,15 @@
         "img": "/team/VatsalTambi.jpg"
     },
     {
+        "Name": "Rahul Verma",
+        "email": "Rahulverma2024@jklu.edu.in",
+        "number": "9414828604",
+        "linkedin": "https://www.linkedin.com/in/rahul-verma14",
+        "role": "Core",
+        "committee": "Registration",
+        "img": "/team/RahulVerma.jpg"
+    },
+    {
         "Name": "Siddhi Nyati",
         "email": "siddhinyati@jklu.edu.in",
         "number": "9587940198",
@@ -52,69 +79,6 @@
         "role": "Core",
         "committee": "Social Media",
         "img": "/team/SiddhiNyati.jpg"
-    },
-    {
-        "Name": "Parth Choudhary",
-        "email": "parthchoudhary@jklu.edu.in",
-        "number": "8279287644",
-        "linkedin": "https://www.linkedin.com/in/parthchoudhary16",
-        "role": "Core",
-        "committee": "Food & Accomodation",
-        "img": "/team/ParthChoudhary.jpg"
-    },
-    {
-        "Name": "Saurav Kumar",
-        "email": "saurav@jklu.edu.in",
-        "number": "6284795858",
-        "linkedin": "Saurav Kumar",
-        "role": "Core",
-        "committee": "Stage & Venue",
-        "img": "/team/Saurav.jpg"
-    },
-    {
-        "Name": "Prakhar Khandelwal",
-        "email": "prakharkhandelwal@jklu.edu.in",
-        "number": "9001879305",
-        "linkedin": "https://www.linkedin.com/in/prakhar-khandelwal-539ab325a",
-        "role": "Core",
-        "committee": "Promotion",
-        "img": "/team/PrakharKhandelwal.jpg"
-    },
-    {
-        "Name": "Khush Bhatt",
-        "email": "khushbatt@jklu.edu.in",
-        "number": "8696957479",
-        "linkedin": "https://www.linkedin.com/in/khush-bhatt9660/",
-        "role": "Core",
-        "committee": "Sponsorship",
-        "img": "/team/KhushBhatt.jpg"
-    },
-    {
-        "Name": "Aaditya Kakkar",
-        "email": "aadityakakkar@jklu.edu.in",
-        "number": "9310342246",
-        "linkedin": "https://www.linkedin.com/in/kakkaraaditya/",
-        "role": "Core",
-        "committee": "Stage & Venue",
-        "img": "/team/AadityaKakkar.jpg"
-    },
-    {
-        "Name": "Vanshika Singh",
-        "email": "vanshikasingh@jklu.edu.in",
-        "number": "8787234551",
-        "linkedin": "https://www.linkedin.com/in/vanshika-singh-7a4a5b261",
-        "role": "Core",
-        "committee": "Discipline",
-        "img": "/team/VanshikaSingh.jpg"
-    },
-    {
-        "Name": "Anushri Modani",
-        "email": "anushreemodani@jklu.edu.in",
-        "number": "9571481344",
-        "linkedin": "https://www.linkedin.com/in/anushrimodani",
-        "role": "Core",
-        "committee": "Design",
-        "img": "/team/AnushreeModani.jpg"
     },
     {
         "Name": "Divyapratap Singh Rajawat",
@@ -126,6 +90,51 @@
         "img": "/team/DivyapratapRajawat.jpg"
     },
     {
+        "Name": "Parth Choudhary",
+        "email": "parthchoudhary@jklu.edu.in",
+        "number": "8279287644",
+        "linkedin": "https://www.linkedin.com/in/parthchoudhary16",
+        "role": "Core",
+        "committee": "Food & Accomodation",
+        "img": "/team/ParthChoudhary.jpg"
+    },
+    {
+        "Name": "Riya Patel",
+        "email": "riyapatel@jklu.edu.in",
+        "number": "8839706341",
+        "linkedin": "https://www.linkedin.com/in/riya-patel082",
+        "role": "Core",
+        "committee": "Food & Accomodation",
+        "img": "/team/RiyaPatel.jpg"
+    },
+    {
+        "Name": "Saurav Kumar",
+        "email": "saurav@jklu.edu.in",
+        "number": "6284795858",
+        "linkedin": "Saurav Kumar",
+        "role": "Core",
+        "committee": "Stage & Venue",
+        "img": "/team/Saurav.jpg"
+    },
+    {
+        "Name": "Aaditya Kakkar",
+        "email": "aadityakakkar@jklu.edu.in",
+        "number": "9310342246",
+        "linkedin": "https://www.linkedin.com/in/kakkaraaditya/",
+        "role": "Core",
+        "committee": "Stage & Venue",
+        "img": "/team/AadityaKakkar.jpg"
+    },
+    {
+        "Name": "Prakhar Khandelwal",
+        "email": "prakharkhandelwal@jklu.edu.in",
+        "number": "9001879305",
+        "linkedin": "https://www.linkedin.com/in/prakhar-khandelwal-539ab325a",
+        "role": "Core",
+        "committee": "Promotion",
+        "img": "/team/PrakharKhandelwal.jpg"
+    },
+    {
         "Name": "Yash Vaid",
         "email": "yashvaid@jklu.edu.in",
         "number": "9024403602",
@@ -133,6 +142,42 @@
         "role": "Core",
         "committee": "Promotion",
         "img": "/team/YashVaid.jpg"
+    },
+    {
+        "Name": "Vanshika Singh",
+        "email": "vanshikasingh@jklu.edu.in",
+        "number": "8787234551",
+        "linkedin": "https://www.linkedin.com/in/vanshika-singh-7a4a5b261",
+        "role": "Core",
+        "committee": "Discipline",
+        "img": "/team/VanshikaSingh.jpg"
+    },
+    {
+        "Name": "Jatin Choudhary",
+        "email": "jatinchoudhary@jklu.edu.in",
+        "number": "6375276531",
+        "linkedin": "https://www.linkedin.com/in/jatin-choudhary-9789a72b9",
+        "role": "Core",
+        "committee": "Discipline",
+        "img": "/team/JatinChoudhary.jpg"
+    },
+    {
+        "Name": "Anushri Modani",
+        "email": "anushreemodani@jklu.edu.in",
+        "number": "9571481344",
+        "linkedin": "https://www.linkedin.com/in/anushrimodani",
+        "role": "Core",
+        "committee": "Design",
+        "img": "/team/AnushreeModani.jpg"
+    },
+    {
+        "Name": "Rupakshi Sharma",
+        "email": "rupakshishamra@jklu.edu.in",
+        "number": "9145908980",
+        "linkedin": "https://www.linkedin.com/in/rupakshi-sharma-interaction-designer/",
+        "role": "Core",
+        "committee": "Design",
+        "img": "/team/RupakshiSharma.jpg"
     },
     {
         "Name": "Harshita Agrawal",
@@ -153,58 +198,13 @@
         "img": "/team/VarunParmar.jpg"
     },
     {
-        "Name": "Rahul Verma",
-        "email": "Rahulverma2024@jklu.edu.in",
-        "number": "9414828604",
-        "linkedin": "https://www.linkedin.com/in/rahul-verma14",
+        "Name": "Khush Bhatt",
+        "email": "khushbatt@jklu.edu.in",
+        "number": "8696957479",
+        "linkedin": "https://www.linkedin.com/in/khush-bhatt9660/",
         "role": "Core",
-        "committee": "Registration",
-        "img": "/team/RahulVerma.jpg"
-    },
-    {
-        "Name": "Riya Patel",
-        "email": "riyapatel@jklu.edu.in",
-        "number": "8839706341",
-        "linkedin": "https://www.linkedin.com/in/riya-patel082",
-        "role": "Core",
-        "committee": "Food & Accomodation",
-        "img": "/team/RiyaPatel.jpg"
-    },
-    {
-        "Name": "Yuvraj Soni",
-        "email": "yuvrajsoni@jklu.edu.in",
-        "number": "9828067878",
-        "linkedin": "https://www.linkedin.com/in/yuvrajsoni",
-        "role": "Core",
-        "committee": "Photography",
-        "img": "/team/YuvrajSoni.jpg"
-    },
-    {
-        "Name": "Jatin Choudhary",
-        "email": "jatinchoudhary@jklu.edu.in",
-        "number": "6375276531",
-        "linkedin": "https://www.linkedin.com/in/jatin-choudhary-9789a72b9",
-        "role": "Core",
-        "committee": "Discipline",
-        "img": "/team/JatinChoudhary.jpg"
-    },
-    {
-        "Name": "Rupakshi Sharma",
-        "email": "rupakshishamra@jklu.edu.in",
-        "number": "9145908980",
-        "linkedin": "https://www.linkedin.com/in/rupakshi-sharma-interaction-designer/",
-        "role": "Core",
-        "committee": "Design",
-        "img": "/team/RupakshiSharma.jpg"
-    },
-    {
-        "Name": "Arshia Sikka",
-        "email": "arshiasikka@jklu.edu.in",
-        "number": "8448770953",
-        "linkedin": "https://www.linkedin.com/in/arshia-sikka-b71856297",
-        "role": "Core",
-        "committee": "Cultural Events",
-        "img": "/team/ArshiaSikka.jpg"
+        "committee": "Sponsorship",
+        "img": "/team/KhushBhatt.jpg"
     },
     {
         "Name": "Dheeraj Sanghi",
