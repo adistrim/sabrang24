@@ -9,7 +9,7 @@ const EarlyBirdPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 5000);
+    }, 15000);
 
     return () => clearTimeout(timer);
   }, []);
