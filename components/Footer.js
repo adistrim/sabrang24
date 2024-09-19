@@ -1,11 +1,14 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FaInstagram, FaMapMarkerAlt, FaPhone, FaShareAlt } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
 import localFont from 'next/font/local'
+import { Rubik } from 'next/font/google';
 
+const rubik = Rubik({ subsets: ['latin'] });
 const spaceRanger = localFont({ src: '../public/fonts/spaceranger.ttf' })
 
 const Footer = () => {
@@ -27,6 +30,17 @@ const Footer = () => {
     return (
         <footer className="bg-gray-900 text-gray-300 py-16 px-4">
             <div className="container mx-auto max-w-6xl">
+                <div className="flex flex-col items-center mb-12">
+                    <Image 
+                        src="/logo/jklu-logo-white.png" 
+                        alt="JKLU Logo" 
+                        width={100} 
+                        height={100}
+                        className="mb-4"
+                    />
+                    <h3 className={`text-2xl font-bold text-white mb-2 ${rubik.className}`}>JK Lakshmipat University</h3>
+                    <p className="text-lg text-gray-400">Presents</p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center mb-12">
                         <motion.h2
