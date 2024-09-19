@@ -25,7 +25,7 @@ export default function HeroSection() {
                 <NavBar />
             </div>
 
-            <main className="flex-grow cursor-default container mx-auto px-4 py-8 sm:py-16 relative flex flex-col justify-center items-center">
+            <main className="flex-grow cursor-default container mx-auto px-4 pt-8 relative flex flex-col justify-center items-center">
                 <div className="relative z-10 text-center">
                     <motion.h1
                         className="text-6xl md:text-8xl font-extrabold mb-4"
