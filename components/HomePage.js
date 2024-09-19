@@ -11,6 +11,7 @@ import { ImHappy2 } from "react-icons/im";
 import FlagshipEventsSection from './FlagshipEventsSection';
 import PhotoCarousel from './PhotoCarousel';
 import HeroSection from './HeroSection';
+import EarlyBirdPopup from './EarlyBirdPopup';
 
 export default function HomePage() {
     
@@ -39,6 +40,7 @@ export default function HomePage() {
 
     return (
         <div className="bg-black text-white overflow-hidden flex flex-col">
+            <EarlyBirdPopup />
             <motion.div
                 className="absolute inset-0 opacity-50"
                 animate={backgroundControls}

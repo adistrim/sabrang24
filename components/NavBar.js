@@ -34,7 +34,7 @@ const NavBar = () => {
           >
             <Link
               href={href}
-              className={`z-50 text-lg font-semibold transition-colors duration-300 ${isActive
+              className={`z-10 text-lg font-semibold transition-colors duration-300 ${isActive
                   ? 'text-yellow-300 hover:text-yellow-300'
                   : 'text-white hover:text-yellow-300'
                 }`}
