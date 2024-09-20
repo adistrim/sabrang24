@@ -1,23 +1,5 @@
 [
     {
-        "Name": "Sujal Peswani",
-        "email": "sujalpeswani@jklu.edu.in",
-        "number": "8696336893",
-        "linkedin": "https://www.linkedin.com/in/sujal50",
-        "role": "Core",
-        "committee": "Technical Events",
-        "img": "/team/SujalPeswani.jpg"
-    },
-    {
-        "Name": "Arshia Sikka",
-        "email": "arshiasikka@jklu.edu.in",
-        "number": "8448770953",
-        "linkedin": "https://www.linkedin.com/in/arshia-sikka-b71856297",
-        "role": "Core",
-        "committee": "Cultural Events",
-        "img": "/team/ArshiaSikka.jpg"
-    },
-    {
         "Name": "Shashank Goyal",
         "email": "shashankgoyal@jklu.edu.in",
         "number": "8432474451",
@@ -34,6 +16,24 @@
         "role": "Core",
         "committee": "Photography",
         "img": "/team/YuvrajSoni.jpg"
+    },
+    {
+        "Name": "Anushri Modani",
+        "email": "anushreemodani@jklu.edu.in",
+        "number": "9571481344",
+        "linkedin": "https://www.linkedin.com/in/anushrimodani",
+        "role": "Core",
+        "committee": "Design",
+        "img": "/team/AnushreeModani.jpg"
+    },
+    {
+        "Name": "Rupakshi Sharma",
+        "email": "rupakshishamra@jklu.edu.in",
+        "number": "9145908980",
+        "linkedin": "https://www.linkedin.com/in/rupakshi-sharma-interaction-designer/",
+        "role": "Core",
+        "committee": "Design",
+        "img": "/team/RupakshiSharma.jpg"
     },
     {
         "Name": "Kavisha Gupta",
@@ -162,22 +162,22 @@
         "img": "/team/JatinChoudhary.jpg"
     },
     {
-        "Name": "Anushri Modani",
-        "email": "anushreemodani@jklu.edu.in",
-        "number": "9571481344",
-        "linkedin": "https://www.linkedin.com/in/anushrimodani",
+        "Name": "Sujal Peswani",
+        "email": "sujalpeswani@jklu.edu.in",
+        "number": "8696336893",
+        "linkedin": "https://www.linkedin.com/in/sujal50",
         "role": "Core",
-        "committee": "Design",
-        "img": "/team/AnushreeModani.jpg"
+        "committee": "Technical Events",
+        "img": "/team/SujalPeswani.jpg"
     },
     {
-        "Name": "Rupakshi Sharma",
-        "email": "rupakshishamra@jklu.edu.in",
-        "number": "9145908980",
-        "linkedin": "https://www.linkedin.com/in/rupakshi-sharma-interaction-designer/",
+        "Name": "Arshia Sikka",
+        "email": "arshiasikka@jklu.edu.in",
+        "number": "8448770953",
+        "linkedin": "https://www.linkedin.com/in/arshia-sikka-b71856297",
         "role": "Core",
-        "committee": "Design",
-        "img": "/team/RupakshiSharma.jpg"
+        "committee": "Cultural Events",
+        "img": "/team/ArshiaSikka.jpg"
     },
     {
         "Name": "Harshita Agrawal",
