@@ -1,9 +1,9 @@
 "use client";
 
+import dynamic from 'next/dynamic';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { FaMusic, FaAward, FaCalendarAlt, FaMoneyBillAlt, FaLaptop, FaChartLine, FaPalette, FaUserGraduate } from 'react-icons/fa';
-import { useTypewriter } from 'react-simple-typewriter';
 import TheBall from '@/components/TheBall';
 import EventCard from '@/components/EventCard';
 import { SiAmazongames } from "react-icons/si";
@@ -13,8 +13,9 @@ import PhotoCarousel from './PhotoCarousel';
 import HeroSection from './HeroSection';
 import EarlyBirdPopup from './EarlyBirdPopup';
 
+const StarryBackground = dynamic(() => import('./StarryBackground'), { ssr: false })
+
 export default function HomePage() {
-    
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const backgroundControls = useAnimation();
 
@@ -34,12 +35,9 @@ export default function HomePage() {
         });
     }, [mousePosition, backgroundControls]);
 
-    const openModal = () => {
-        window.open('http://sabrang.ticketless.online/', '_blank');
-    };
-
     return (
         <div className="bg-black text-white overflow-hidden flex flex-col">
+            <StarryBackground />
             <EarlyBirdPopup />
             <motion.div
                 className="absolute inset-0 opacity-50"
@@ -55,6 +53,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative py-24 bg-gradient-to-b from-blue-900/20 to-pink-900/20">
+                <StarryBackground />
                 <motion.div
                     className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8"
                     initial={{ opacity: 0, y: 20 }}
@@ -171,6 +170,7 @@ export default function HomePage() {
 
             {/* Coming Soon section */}
             <div className="relative py-24 bg-gradient-to-b from-purple-900/20 to-indigo-900/20">
+                <StarryBackground />
                 <motion.div
                     className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8"
                     initial={{ opacity: 0, y: 20 }}

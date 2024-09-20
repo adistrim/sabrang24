@@ -8,6 +8,13 @@ import { Search, Clock, Calendar } from 'lucide-react';
 import NavBar from './NavBar';
 import TheBall from './TheBall';
 import scheduleData from '@/data/schedule.json';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const poppins = Poppins({
     weight: ['400', '600', '700'],
@@ -28,7 +35,7 @@ const formatCustomDate = (date) => {
 
 const SchedulePage = () => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedDate, setSelectedDate] = useState('');
+    const [selectedDate, setSelectedDate] = useState('all');
 
     const dates = useMemo(() => [...new Set(scheduleData.map(event => event.Date))], []);
 
@@ -36,7 +43,7 @@ const SchedulePage = () => {
         return scheduleData
             .filter(event => 
                 (event["Name of Event"].toLowerCase().includes(searchTerm.toLowerCase()) || searchTerm === '') &&
-                (event.Date === selectedDate || selectedDate === '')
+                (event.Date === selectedDate || selectedDate === 'all')
             )
             .sort((a, b) => {
                 const dateA = parse(`${a.Date} ${a["Start Time"]}`, 'dd-MM-yyyy HH:mm:ss', new Date());
@@ -77,7 +84,7 @@ const SchedulePage = () => {
     };
 
     return (
-        <div className={`min-h-screen bg-gradient-to-b from-gray-900 to-black text-white ${poppins.className}`}>
+        <div className={`min-h-screen bg-black text-white ${poppins.className}`}>
             <NavBar />
             <TheBall />
             <main className="container mx-auto px-4 py-8 relative z-10">
@@ -93,28 +100,31 @@ const SchedulePage = () => {
                 </motion.h1>
 
                 <div className="flex flex-col sm:flex-row justify-center items-center mb-12 space-y-4 sm:space-y-0 sm:space-x-4">
-                    <div className="relative">
+                    <div className="relative w-full sm:w-64">
                         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                         <input
                             type="text"
                             placeholder="Search events..."
-                            className="pl-10 pr-4 py-3 rounded-full bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 w-full sm:w-64"
+                            className="pl-10 pr-4 py-3 rounded-full bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 w-full"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
                     </div>
-                    <select
-                        className="px-4 py-3 rounded-full bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 w-full sm:w-auto"
-                        value={selectedDate}
-                        onChange={(e) => setSelectedDate(e.target.value)}
-                    >
-                        <option value="">All Dates</option>
-                        {dates.map(date => (
-                            <option key={date} value={date}>
-                                {formatCustomDate(date)}
-                            </option>
-                        ))}
-                    </select>
+                    <div className="w-full sm:w-64">
+                        <Select onValueChange={setSelectedDate} value={selectedDate}>
+                            <SelectTrigger className="w-full bg-gray-800 text-white rounded-full focus:ring-2 focus:ring-pink-400 px-4 py-3">
+                                <SelectValue placeholder="Select a date" />
+                            </SelectTrigger>
+                            <SelectContent className="bg-gray-800 text-white">
+                                <SelectItem value="all">All Dates</SelectItem>
+                                {dates.map(date => (
+                                    <SelectItem key={date} value={date}>
+                                        {formatCustomDate(date)}
+                                    </SelectItem>
+                                ))}
+                            </SelectContent>
+                        </Select>
+                    </div>
                 </div>
 
                 <div className="relative">
@@ -151,7 +161,7 @@ const SchedulePage = () => {
                         href="https://sabrang.ticketless.online/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-4 px-8 rounded-full text-xl sm:text-2xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1"
+                        className="bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg"
                     >
                         Get Your Tickets Now!
                     </a>

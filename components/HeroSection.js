@@ -20,13 +20,13 @@ export default function HeroSection() {
     };
 
     return (
-        <div className='min-h-screen'>
-            <div className="relative">
+        <div className='min-h-screen relative'>
+            <div className="relative z-10">
                 <NavBar />
             </div>
 
-            <main className="flex-grow cursor-default container mx-auto px-4 pt-8 relative flex flex-col justify-center items-center">
-                <div className="relative z-10 text-center">
+            <main className="flex-grow cursor-default container mx-auto px-4 pt-8 relative flex flex-col justify-center items-center z-20">
+                <div className="relative text-center">
                     <motion.h1
                         className="text-6xl md:text-8xl font-extrabold mb-4"
                         animate={{
