@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const NavBar = () => {
   const navItems = ['Home', 'About', 'Events', 'Schedule', 'Team'];
@@ -35,8 +36,8 @@ const NavBar = () => {
             <Link
               href={href}
               className={`z-10 text-lg font-semibold transition-colors duration-300 ${isActive
-                  ? 'text-yellow-300 hover:text-yellow-300'
-                  : 'text-white hover:text-yellow-300'
+                ? 'text-yellow-300 hover:text-yellow-300'
+                : 'text-white hover:text-yellow-300'
                 }`}
               onClick={() => mobile && setIsOpen(false)}
             >
@@ -53,11 +54,19 @@ const NavBar = () => {
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-center p-6">
         <motion.div
-          className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-full px-8 py-4 shadow-lg"
+          className="bg-white flex space-x-5 bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-full px-8 py-4 shadow-lg"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          <Image
+            src="/logo/sabrang-jklu.png"
+            alt="JKLU Logo"
+            width={55}
+            height={25}
+            className="mx-auto"
+          />
+          <div className="border-l border-gray-300 h-full"></div>
           <NavItems />
         </motion.div>
       </div>
