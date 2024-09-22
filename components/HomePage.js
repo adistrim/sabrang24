@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { FaMusic, FaAward, FaCalendarAlt, FaMoneyBillAlt, FaLaptop, FaChartLine, FaPalette, FaUserGraduate } from 'react-icons/fa';
-import TheBall from '@/components/TheBall';
 import EventCard from '@/components/EventCard';
 import { SiAmazongames } from "react-icons/si";
 import { ImHappy2 } from "react-icons/im";
@@ -43,8 +42,6 @@ export default function HomePage() {
                 className="absolute inset-0 opacity-50"
                 animate={backgroundControls}
             />
-
-            <TheBall />
 
             <HeroSection />
 

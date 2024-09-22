@@ -6,7 +6,6 @@ import { Poppins, Rubik } from 'next/font/google';
 import { format, parse } from 'date-fns';
 import { Search, Clock, Calendar } from 'lucide-react';
 import NavBar from './NavBar';
-import TheBall from './TheBall';
 import scheduleData from '@/data/schedule.json';
 import {
   Select,
@@ -86,7 +85,6 @@ const SchedulePage = () => {
     return (
         <div className={`min-h-screen bg-black text-white ${poppins.className}`}>
             <NavBar />
-            <TheBall />
             <main className="container mx-auto px-4 py-8 relative z-10">
                 <motion.h1
                     className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-8 sm:mb-12 text-center ${rubik.className}`}

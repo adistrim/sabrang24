@@ -56,7 +56,7 @@ const Footer = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400">
                                     SABRANG
                                 </span>
                             </motion.h2>
@@ -66,7 +66,7 @@ const Footer = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
                             >
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400">
                                     2024
                                 </span>
                             </motion.h3>

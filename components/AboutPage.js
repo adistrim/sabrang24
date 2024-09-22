@@ -9,7 +9,6 @@ import { FaMusic, FaTheaterMasks, FaPaintBrush } from 'react-icons/fa';
 import { Poppins, Rubik } from 'next/font/google';
 import FlagshipEventsSection from './FlagshipEventsSection';
 import SponsorshipSection from './SponsorshipSection';
-import TheBall from './TheBall';
 import localFont from 'next/font/local'
 
 const spaceRanger = localFont({ src: '../public/fonts/spaceranger.ttf' })
@@ -30,8 +29,6 @@ const AboutPage = () => {
       <div className="relative z-10">
         <NavBar />
       </div>
-
-      <TheBall />
 
       <main className="flex-grow container mx-auto px-4 py-12 sm:py-20 relative z-10">
         <motion.h1

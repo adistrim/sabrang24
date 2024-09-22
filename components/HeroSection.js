@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar';
 import { FaMusic, FaTheaterMasks, FaPaintBrush } from 'react-icons/fa';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import localFont from 'next/font/local'
+import Image from 'next/image';
 
 const spaceRanger = localFont({ src: '../public/fonts/spaceranger.ttf' })
 
@@ -27,6 +28,21 @@ export default function HeroSection() {
 
             <main className="flex-grow cursor-default container mx-auto px-4 pt-8 relative flex flex-col justify-center items-center z-20">
                 <div className="relative text-center">
+                    <motion.div
+                        className="mb-4"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        <Image
+                            src="/logo/jklc.png"
+                            alt="Title Sponsor Logo"
+                            width={150}
+                            height={75}
+                            className="mx-auto"
+                        />
+                    </motion.div>
+
                     <motion.h1
                         className="text-6xl md:text-8xl font-extrabold mb-4"
                         animate={{
@@ -46,7 +62,7 @@ export default function HeroSection() {
                             transition: { duration: 0.2 },
                         }}
                     >
-                        <span className={`text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 ${spaceRanger.className}`}>
+                        <span className={`text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F8F] via-[#BC24A6] to-[#8C27B7] ${spaceRanger.className}`}>
                             SABRANG 2024
                         </span>
                     </motion.h1>

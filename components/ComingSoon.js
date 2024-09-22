@@ -1,6 +1,5 @@
 "use client";
 import NavBar from '@/components/NavBar';
-import TheBall from './TheBall';
 import { FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -8,7 +7,6 @@ import Link from 'next/link';
 const ComingSoon = () => {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
-      <TheBall />
       <div className='relative'>
         <NavBar />
       </div>
