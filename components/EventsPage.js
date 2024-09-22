@@ -160,7 +160,7 @@ const EventsPage = ({ events }) => {
               href="https://sabrang.ticketless.online/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+              className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-md sm:text-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
             >
               Register Now
             </a>
@@ -168,7 +168,7 @@ const EventsPage = ({ events }) => {
               href="https://storageapi.ticketless.online/ticketify2/sabrang/Rulebook.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gray-800 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-lg sm:text-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+              className="inline-flex items-center bg-gray-800 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-md sm:text-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
             >
               <FaBook className="mr-2" /> Rule Book
             </a>

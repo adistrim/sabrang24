@@ -37,14 +37,14 @@ export default function HeroSection() {
                         <Image
                             src="/logo/jklc.png"
                             alt="Title Sponsor Logo"
-                            width={150}
-                            height={75}
+                            width={200}
+                            height={105}
                             className="mx-auto"
                         />
                     </motion.div>
 
                     <motion.h1
-                        className="text-6xl md:text-8xl font-extrabold mb-4"
+                        className="text-6xl md:text-[7rem] font-extrabold mb-4"
                         animate={{
                             opacity: [0.8, 1, 0.8],
                             textShadow: [
@@ -63,7 +63,7 @@ export default function HeroSection() {
                         }}
                     >
                         <span className={`text-transparent bg-clip-text bg-gradient-to-r from-[#FF1F8F] via-[#BC24A6] to-[#8C27B7] ${spaceRanger.className}`}>
-                            SABRANG 2024
+                            SABRANG
                         </span>
                     </motion.h1>
 
