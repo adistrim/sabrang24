@@ -13,7 +13,7 @@ const bebasNeue = Bebas_Neue({
 })
 
 export const metadata = {
-  title: "Sabrang 2024",
+  title: "Sabrang 2024 - Preview",
   description: "Sabrang is the flagship annual festival of JK Lakshmipat University, Jaipur (JKLU). Since 2011, Sabrang has been celebrated annually.",
 };
 
