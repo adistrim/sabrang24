@@ -48,7 +48,7 @@ const EventsPage = ({ events }) => {
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <p className="text-lg sm:text-xl md:text-2xl font-semibold">
-            <span className="text-yellow-400">25+ Events</span> | Combined Prize Pool of <span className="text-green-400">INR 6,00,000+</span>
+            <span className="text-yellow-400">25+ Events</span> | Combined Prize Pool of <span className="text-green-400">INR 3,00,000+</span>
           </p>
           <p className="text-[0.5rem] md:text-xs mt-2 text-gray-500">*Final prize pool is subject to registrations.</p>
         </motion.div>

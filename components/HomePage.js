@@ -143,7 +143,7 @@ export default function HomePage() {
                         />
                         <EventCard
                             icon={<FaMoneyBillAlt className="text-4xl text-pink-400" />}
-                            title="Prize Pool: INR 6,00,000+"
+                            title="Prize Pool: INR 3,00,000+"
                             description="Compete for a chance to win a share of the generous prize pool."
                         />
                         <EventCard
