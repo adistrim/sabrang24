@@ -10,7 +10,7 @@ import { ImHappy2 } from "react-icons/im";
 import FlagshipEventsSection from './FlagshipEventsSection';
 import PhotoCarousel from './PhotoCarousel';
 import HeroSection from './HeroSection';
-import EarlyBirdPopup from './EarlyBirdPopup';
+// import EarlyBirdPopup from './EarlyBirdPopup'; // Early bird pop-up
 
 const StarryBackground = dynamic(() => import('./StarryBackground'), { ssr: false })
 
@@ -37,7 +37,7 @@ export default function HomePage() {
     return (
         <div className="bg-black text-white overflow-hidden flex flex-col">
             <StarryBackground />
-            <EarlyBirdPopup />
+            {/* <EarlyBirdPopup /> Early bird pop-up */}
             <motion.div
                 className="absolute inset-0 opacity-50"
                 animate={backgroundControls}
